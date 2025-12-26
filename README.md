@@ -1,3 +1,5 @@
+![agentsville_planner](./demo.png)
+
 # AgentsVille Trip Planner
 
 This repository contains the AgentsVille Trip Planner Jupyter notebook and supporting code. The app generates and refines travel itineraries using an LLM and simulated tools (weather and activities).
