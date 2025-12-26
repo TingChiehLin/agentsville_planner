@@ -1,0 +1,90 @@
+{
+    "2025-07-15": [
+      {
+        "id": "A1",
+        "name": "Riverside Walk",
+        "description": "A gentle 60-minute walk along the riverside with local vendors and photo spots.",
+        "duration_hours": 1.0,
+        "cost_usd": 10.0,
+        "suitability": ["outdoor", "relaxed"],
+        "weather_suitable": ["sunny", "cloudy"]
+      },
+      {
+        "id": "A2",
+        "name": "City Museum",
+        "description": "Indoor museum showcasing local history and contemporary exhibitions.",
+        "duration_hours": 2.0,
+        "cost_usd": 15.0,
+        "suitability": ["indoor", "culture", "family"],
+        "weather_suitable": ["sunny", "cloudy", "light-rain", "heavy-rain"]
+      },
+      {
+        "id": "A3",
+        "name": "Welcome Food Stalls",
+        "description": "Sampling stall-style local specialties for a casual dinner.",
+        "duration_hours": 1.5,
+        "cost_usd": 25.0,
+        "suitability": ["food", "outdoor"],
+        "weather_suitable": ["sunny", "cloudy"]
+      }
+    ],
+    "2025-07-16": [
+      {
+        "id": "A4",
+        "name": "Guided Kayak",
+        "description": "2-hour guided kayaking on calm waters; includes life jackets and basic instruction.",
+        "duration_hours": 2.0,
+        "cost_usd": 60.0,
+        "suitability": ["outdoor", "active"],
+        "weather_suitable": ["sunny"]
+      },
+      {
+        "id": "A5",
+        "name": "Local Food Market Tour",
+        "description": "Walk-through of a buzzing market with tasting stops and vendor stories.",
+        "duration_hours": 1.5,
+        "cost_usd": 30.0,
+        "suitability": ["food", "outdoor"],
+        "weather_suitable": ["sunny", "cloudy"]
+      },
+      {
+        "id": "A6",
+        "name": "Indoor Cooking Class",
+        "description": "Hands-on 2.5-hour local cuisine class suitable for all skill levels.",
+        "duration_hours": 2.5,
+        "cost_usd": 55.0,
+        "suitability": ["indoor", "food", "hands-on"],
+        "weather_suitable": ["sunny", "cloudy", "light-rain", "heavy-rain"]
+      }
+    ],
+    "2025-07-17": [
+      {
+        "id": "A7",
+        "name": "Sunrise Lookout Hike",
+        "description": "Moderate hike to a viewpoint; great for sunrise photography (bring water and sun protection).",
+        "duration_hours": 2.0,
+        "cost_usd": 0.0,
+        "suitability": ["outdoor", "active"],
+        "weather_suitable": ["sunny", "cloudy"]
+      },
+      {
+        "id": "A8",
+        "name": "Contemporary Art Gallery",
+        "description": "Small but curated indoor gallery featuring local artists.",
+        "duration_hours": 1.5,
+        "cost_usd": 12.0,
+        "suitability": ["indoor", "culture"],
+        "weather_suitable": ["sunny", "cloudy", "light-rain", "heavy-rain"]
+      },
+      {
+        "id": "A9",
+        "name": "Harbor Boat Cruise",
+        "description": "90-minute coastal cruise with narration and optional refreshments.",
+        "duration_hours": 1.5,
+        "cost_usd": 45.0,
+        "suitability": ["outdoor", "relaxed"],
+        "weather_suitable": ["sunny", "cloudy"]
+      }
+    ]
+  }
+  
