@@ -27,37 +27,41 @@ def calculator_tool(expression: str) -> str:
 
 def run_evals_tool(itinerary_json: str, weather_json: str, activities_db: dict) -> str:
     """
-    Simple evaluator: checks budget, date ranges, >=2 activities/day,
-    and flags weather-incompatible activities. Returns JSON string.
+    Evaluator: checks >=2 activities/day and flags weather-incompatible activities.
+    Weather compatibility is evaluated via LLM.
     """
     import json
-    from datetime import datetime
+    from agentsville.weather import check_weather_compatibility
 
     plan = json.loads(itinerary_json)
     weather = json.loads(weather_json)
     issues = []
-    total = plan.get("total_cost_usd", 0)
-    # dummy budget check left to caller with VacationInfo if needed
+
     for day in plan.get("days", []):
-        d = day.get("date")
-        # min activities
+        date = day.get("date")
+
+        # Minimum activities per day
         if len(day.get("activities", [])) < 2:
-            issues.append({"date": d, "issue": "fewer than 2 activities"})
-        # weather compatibility check
-        w = weather.get(d)
+            issues.append({"date": date, "issue": "fewer than 2 activities"})
+
+        day_weather = weather.get(date)
+        if not day_weather:
+            continue
+
         for act in day.get("activities", []):
-            if w and "weather_suitable" in act:
-                if w not in act["weather_suitable"] and "indoor" not in act.get(
-                    "suitability", []
-                ):
-                    issues.append(
-                        {
-                            "date": d,
-                            "activity": act.get("name"),
-                            "issue": f"incompatible with {w}",
-                        }
-                    )
+            result = check_weather_compatibility(act, day_weather)
+
+            if result == "IS_INCOMPATIBLE":
+                issues.append(
+                    {
+                        "date": date,
+                        "activity": act.get("name"),
+                        "issue": f"incompatible with {day_weather}",
+                    }
+                )
+
     passed = len(issues) == 0
+
     return json.dumps(
         {"passed": passed, "issues": issues, "summary": f"{len(issues)} issue(s)"}
     )
