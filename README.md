@@ -46,3 +46,17 @@ python3 app.py
 # ensure venv active and package installed in editable mode
 pytest -q
 ```
+
+### Conclusion
+
+- Prompt Engineering: Clear role definitions, structured output requirements, and Chain-of-Thought guidance
+- ReAct Agent Design: Proper THINK-ACT-OBSERVE cycle with explicit tool invocation format
+- Structured Output: Pydantic models for type validation and schema generation
+- Tool Design: Well-documented tool docstrings with parameter specifications
+
+### Learning Resources
+
+- [Prompt Engineering Guide](https://www.promptingguide.ai/) - Comprehensive prompt engineering techniques
+-[ReAct: Synergizing Reasoning and Acting](https://arxiv.org/abs/2210.03629) - Original ReAct paper
+-[Pydantic Documentation](https://docs.pydantic.dev/latest/) - Structured output with Pydantic
+-[OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling) - Tool use patterns
