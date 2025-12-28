@@ -57,9 +57,6 @@ pytest -q
 ### Learning Resources
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/) - Comprehensive prompt engineering techniques
-- 
--[ReAct: Synergizing Reasoning and Acting](https://arxiv.org/abs/2210.03629) - Original ReAct paper
-
--[Pydantic Documentation](https://docs.pydantic.dev/latest/) - Structured output with Pydantic
-
--[OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling) - Tool use patterns
+- [ReAct: Synergizing Reasoning and Acting](https://arxiv.org/abs/2210.03629) - Original ReAct paper
+- [Pydantic Documentation](https://docs.pydantic.dev/latest/) - Structured output with Pydantic
+- [OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling) - Tool use patterns
