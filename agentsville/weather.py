@@ -16,7 +16,7 @@ def check_weather_compatibility(activity: dict, weather: str) -> str:
 
     response = client.responses.create(
         model="gpt-4.1-mini",
-        messages=[
+        input=[
             {
                 "role": "system",
                 "content": ACTIVITY_AND_WEATHER_ARE_COMPATIBLE_SYSTEM_PROMPT,

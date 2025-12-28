@@ -1,0 +1,160 @@
+{
+  "destination": "AgentsVille",
+  "start_date": "2025-07-15",
+  "end_date": "2025-07-17",
+  "total_cost_usd": 162.0,
+  "days": [
+    {
+      "date": "2025-07-15",
+      "summary": "Explore local culture and enjoy outdoor food stalls on a cloudy day.",
+      "activities": [
+        {
+          "id": "A1",
+          "name": "Riverside Walk",
+          "description": "A gentle 60-minute walk along the riverside with local vendors and photo spots.",
+          "duration_hours": 1.0,
+          "cost_usd": 10.0,
+          "suitability": [
+            "outdoor",
+            "relaxed"
+          ],
+          "weather_suitable": [
+            "sunny",
+            "cloudy"
+          ]
+        },
+        {
+          "id": "A2",
+          "name": "City Museum",
+          "description": "Indoor museum showcasing local history and contemporary exhibitions.",
+          "duration_hours": 2.0,
+          "cost_usd": 15.0,
+          "suitability": [
+            "indoor",
+            "culture",
+            "family"
+          ],
+          "weather_suitable": [
+            "sunny",
+            "cloudy",
+            "light-rain",
+            "heavy-rain"
+          ]
+        },
+        {
+          "id": "A3",
+          "name": "Welcome Food Stalls",
+          "description": "Sampling stall-style local specialties for a casual dinner.",
+          "duration_hours": 1.5,
+          "cost_usd": 25.0,
+          "suitability": [
+            "food",
+            "outdoor"
+          ],
+          "weather_suitable": [
+            "sunny",
+            "cloudy"
+          ]
+        }
+      ],
+      "estimated_cost_usd": 50.0
+    },
+    {
+      "date": "2025-07-16",
+      "summary": "Indoor food experiences due to heavy rain. Limited activities available.",
+      "activities": [
+        {
+          "id": "A6",
+          "name": "Indoor Cooking Class",
+          "description": "Hands-on 2.5-hour local cuisine class suitable for all skill levels.",
+          "duration_hours": 2.5,
+          "cost_usd": 55.0,
+          "suitability": [
+            "indoor",
+            "food",
+            "hands-on"
+          ],
+          "weather_suitable": [
+            "sunny",
+            "cloudy",
+            "light-rain",
+            "heavy-rain"
+          ]
+        },
+        {
+          "id": "A10",
+          "name": "Relaxing Indoor Lounge Time",
+          "description": "Time to relax indoors with comfortable seating and refreshments.",
+          "duration_hours": 0.0,
+          "cost_usd": 0.0,
+          "suitability": [
+            "indoor",
+            "relaxed"
+          ],
+          "weather_suitable": [
+            "sunny",
+            "cloudy",
+            "light-rain",
+            "heavy-rain"
+          ]
+        }
+      ],
+      "estimated_cost_usd": 55.0
+    },
+    {
+      "date": "2025-07-17",
+      "summary": "Outdoor activities and cultural exploration on a sunny day.",
+      "activities": [
+        {
+          "id": "A7",
+          "name": "Sunrise Lookout Hike",
+          "description": "Moderate hike to a viewpoint; great for sunrise photography (bring water and sun protection).",
+          "duration_hours": 2.0,
+          "cost_usd": 0.0,
+          "suitability": [
+            "outdoor",
+            "active"
+          ],
+          "weather_suitable": [
+            "sunny",
+            "cloudy"
+          ]
+        },
+        {
+          "id": "A9",
+          "name": "Harbor Boat Cruise",
+          "description": "90-minute coastal cruise with narration and optional refreshments.",
+          "duration_hours": 1.5,
+          "cost_usd": 45.0,
+          "suitability": [
+            "outdoor",
+            "relaxed"
+          ],
+          "weather_suitable": [
+            "sunny",
+            "cloudy"
+          ]
+        },
+        {
+          "id": "A8",
+          "name": "Contemporary Art Gallery",
+          "description": "Small but curated indoor gallery featuring local artists.",
+          "duration_hours": 1.5,
+          "cost_usd": 12.0,
+          "suitability": [
+            "indoor",
+            "culture"
+          ],
+          "weather_suitable": [
+            "sunny",
+            "cloudy",
+            "light-rain",
+            "heavy-rain"
+          ]
+        }
+      ],
+      "estimated_cost_usd": 57.0
+    }
+  ],
+  "notes": "The itinerary balances outdoor and indoor activities based on weather forecasts, focusing on food, culture, and nature interests. The budget is well managed with a total estimated cost of $162, leaving room for meals and transport."
+}
